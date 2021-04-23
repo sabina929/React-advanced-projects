@@ -14,6 +14,7 @@ const SingleColor = ({rgb, weight, index, hexColor}) => {
 
     return () => clearTimeout(timeout)
   }, [alert])
+  
   return (
     <article className={`color ${index > 10 && 'color-light'}`} style={{backgroundColor: `rgb(${bcg})`}} onClick={()=>{
       setAlert(true)
